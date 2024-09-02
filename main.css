@@ -1,0 +1,109 @@
+@import url("https://fonts.cdnfonts.com/css/porter-sans-block");
+@import url("https://fonts.cdnfonts.com/css/wallpoet");
+
+body {
+  width: 100 vw;
+  height: 100%;
+  background-color: black;
+  border-width: 5px;
+  border-color: #24ff00;
+}
+header button {
+  font-family: "Porter Sans Block", sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  margin-right: 110px;
+  margin-top: -100px;
+  border: none;
+  border-radius: 50px;
+
+  background: none;
+  color: #2616e9;
+}
+
+header .img {
+  margin-right: 90px;
+  width: 100 vw;
+}
+
+header {
+  width: 100 vw;
+  margin-left: 70px;
+  margin-top: 120px;
+  margin-right: 70px;
+  display: flex;
+  border-width: 3px;
+  border-color: 24FF00;
+}
+
+header button:hover {
+  background: white;
+}
+
+header button:active {
+  background: grey;
+}
+
+main button {
+  font-family: "Wallpoet", sans-serif;
+  font-size: 64px;
+  color: white;
+  border-color: red;
+  border-width: 3px;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: 3px;
+  height: 300px;
+  width: 300px;
+  padding: 0;
+  border-radius: 70px;
+  background: #0000ff;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background-image: url(img/whta\ is\ it_.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main button {
+  margin-top: 200px;
+}
+
+main button:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+main button:focus {
+  animation-play-state: paused;
+  animation: nothing;
+  background: black;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes nothing {
+}
+
+button {
+  cursor: pointer;
+}
